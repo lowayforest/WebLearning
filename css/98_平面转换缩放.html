@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平面转换缩放</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 210px;
+            margin: 100px auto;
+            background-color: pink;
+            overflow: hidden;
+        }
+
+        .box img {
+            width: 100%;
+            transition: all 0.5s;
+        }
+
+        .box:hover img {
+            /* 修改宽高尺寸从左上角开始 */
+            /* width: 500px;
+            height: 400px; */
+
+            /* 大于1放大 */
+            /* 小于1缩小 */
+            /* 等于1不变 */
+            transform: scale(2);
+            transform: scale(0.5);
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./image/product.jpeg" alt="">
+    </div>
+</body>
+</html>
